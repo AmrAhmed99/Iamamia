@@ -1,0 +1,18 @@
+.container {
+    height: 5rem;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.socialAccountsImgs {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.socialAccountIcon {
+    opacity: 0.6;
+    cursor: pointer;
+}

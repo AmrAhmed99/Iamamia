@@ -1,9 +1,9 @@
-const Register = () => {
+const Dashboard = () => {
   return (
     <div>
-      Register
+      Dashboard
     </div>
   );
 }
 
-export default Register;
+export default Dashboard;
