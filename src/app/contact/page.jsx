@@ -1,7 +1,30 @@
+import Button from '@/components/button/Button';
+import styles from './Page.module.css';
+import Image from 'next/image';
+
 const Contact = () => {
   return (
-    <div>
-      contact
+    <div className={styles.container}>
+      <h3 className={styles.title}>Let's Keep in Touch </h3>
+      <div className={styles.content}>
+        
+        <div className={styles.imgContainer}>
+          <Image 
+            src='/contact.png'
+            alt=''
+            fill={true}
+            className={styles.image}
+          />
+        </div>
+
+        <form className={styles.form}>
+          <input type="text" placeholder='name' className={styles.input}/>
+          <input type="text" placeholder='email' className={styles.input}/>
+          <textarea className={styles.textArea} placeholder='message' cols="30" rows="8"></textarea>
+          <Button url='#' text='Send'/>
+        </form>
+
+      </div>
     </div>
   );
 }
